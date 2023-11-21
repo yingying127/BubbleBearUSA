@@ -1,12 +1,12 @@
 // import { useState } from "react";
 // import useMediaQuery from "../hooks/useMediaQuery"; 
 
-const Navbar = () => {
+const Menu = () => {
     return (
         <div>
-            <h1>hey</h1>
+            <h1>menu</h1>
         </div>
     )
 }
 
-export default Navbar;
+export default Menu;

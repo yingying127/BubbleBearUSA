@@ -1,7 +1,7 @@
 import Navbar from "./scenes/Navbar";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");

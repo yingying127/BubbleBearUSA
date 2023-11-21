@@ -1,7 +1,7 @@
 // import { useState } from "react";
 // import useMediaQuery from "../hooks/useMediaQuery"; 
 
-const Navbar = () => {
+const Home = () => {
     return (
         <div>
             <h1>hey</h1>
@@ -9,4 +9,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default Home;
