@@ -1,7 +1,8 @@
 import Navbar from "./scenes/Navbar";
+import Home from "./scenes/Home";
 import { useEffect, useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -32,13 +33,13 @@ function App() {
      />
      <div className="w-5/6 mx-auto md:h-full">
       {isDesktop}
-      {/* <motion.div
+      <motion.div
         margin="0 0 -200px 0"
         amount="all"
-        onViewportEnter={() => setSelectedPage="home")}
+        onViewportEnter={() => setSelectedPage("home")}
       >
-
-      </motion.div> */}
+        <Home setSelectedPage={setSelectedPage} />
+      </motion.div>
      </div>
     </div>
   )
