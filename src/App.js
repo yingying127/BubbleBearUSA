@@ -1,3 +1,4 @@
+import Scrollbar from "./scenes/Scrollbar";
 import Navbar from "./scenes/Navbar";
 import Home from "./scenes/Home";
 import { useEffect, useState } from "react";
@@ -25,14 +26,21 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
+    <div className="app bg-deep-blue">
      <Navbar
       isTopOfPage={isTopOfPage}
       selectedPage={selectedPage}
       setSelectedPage={setSelectedPage}
      />
      <div className="w-5/6 mx-auto md:h-full">
-      {isDesktop}
+      {
+        isDesktop && (
+          <Scrollbar
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+        )
+      }
       <motion.div
         margin="0 0 -200px 0"
         amount="all"
